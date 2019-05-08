@@ -8,8 +8,6 @@
     <link rel="stylesheet" href="./style.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,900" rel="stylesheet">
     <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
-
-
     <title>Project</title>
 </head>
 
@@ -17,16 +15,21 @@
     <main>
         <section class="header">
             <p class="top">
-                <span class="lang span-row"><i class="fa fa-globe my-icons" aria-hidden="true"></i> Language: <span
-                        class="active black">English</span></span>
-                <span class="span-row"><i class="fa fa-phone my-icons" aria-hidden="true"></i> Call us:
-                    1.777.777.777</span>
-                <span class="span-row"><i class="fa fa-send my-icons" aria-hidden="true"></i> hello@thefox.com.vn</span>
+                <span class="lang span-row"><i class="fa fa-globe my-icons" aria-hidden="true"></i> Languages: <span
+                  class="active black" style="color:white;">English</span></span>
+                <span class="span-row"><i class="fa fa-phone my-icons" aria-hidden="true"></i> <span class="call-us">
+                  Call us:
+               1.777.777.777
+               </span></span>
+                <span class="span-row"><i class="fa fa-send my-icons" aria-hidden="true"></i> <span class="mail"> hello@thefox.com.vn</span></span>
             </p>
         </section>
         <div class="clearfix"></div>
         <section class="navigation top">
-            <div class="logo-image"><img src="image/Logo.png" alt=""></div>
+            <div class="logo-image">
+                <img src="image/Logo.png" alt="">
+                <span class="logo-title">the<span class="black">fox</span></span>
+            </div>
             <div class="menu">
                 <nav class="top-nav">
                     <ul class="nav-row">
@@ -45,8 +48,6 @@
                 </nav>
             </div>
         </section>
-        <br><br><br><br>
-
 
         <!-- Need to remove this -->
         <div class="clearfix"></div>
@@ -56,32 +57,23 @@
                     <p>Classic Blog</p>
                     <a href="#"><img class="hamburger-menu" src="./image/hamburger.png" alt="Hamburger"></a>
                 </div>
-
                 <div class="right-information">
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Home</a><i class="fa fa-angle-right"></i> </li>
+                        <li><a href="#">Blog</a><i class="fa fa-angle-right"></i> </li>
                         <li><a href="#">Classic Blog</a></li>
                     </ul>
                 </div>
             </div>
         </section>
-
-
-
-
-
-
         <div class="clearfix"></div>
-        <br><br><br><br>
-        <br><br><br><br>
 
         <!-- Need to remove this -->
         <div class="two-sections">
             <section class="content">
-                <div class="post">
+                <div class="post first">
                     <div class="post-img"></div>
-                    <h1>Amazing Standart Blog Post</h1>
+                    <span class="content-title"><a href="#">Amazing Standard Blog Post</a></span>
                     <div class="list">
                         <ul>
                             <li>By Tran Mau Tri Tam</li>
@@ -92,45 +84,41 @@
                             <li>Share This Post</li>
                         </ul>
                     </div>
-                    <p>In varius varius justo, eget ultrices mauris rhoncus non. Morbi tristique, mauris eu imperdiet
-                        bibendum, velit diam iaculis velit, in ornare massa enim at lorem. Etiam risus diam, porttitor
-                        vitae
-                        ultrices quis, dapibus id dolor. Morbi venenatis lacinia rhoncus. Pellentesque non bibendum
-                        tellus,
-                        vitae semper sem. Morbi nec porta sem, eget egestas leo. Donec imperdiet varius urna...
+                    <p class="post-desc">
+                            In varius varius justo, eget ultrices mauris rhoncus non.
+                             Morbi tristique, mauris eu imperdiet bibendum, velit diam 
+                             iaculis velit, in ornare massa enim at lorem. Etiam risus diam,
+                              porttitor vitae ultrices quis, dapibus id dolor. Morbi venenatis
+                               lacinia rhoncus. Pellentesque non bibendum tellus,
+                             vitae semper sem. Morbi nec porta sem, eget egestas leo.
+                              Donec imperdiet varius urna...
                     </p>
-                    <a href="#">READ MORE</a>
+                    
+                    <a href="#" class="read-more">READ MORE</a>
                 </div>
 
-                <br><br><br>
-                <!-- REMOVE THIS -->
-                <br><br><br>
+              
 
-                <div class="post">
-                    <div class="video-img">
+                <div class="post content-second-post">
+                    <div class="video-img second-tag">
                         <div class="first-arrow">
                             <div class="left-arrow">
                                 <i class="fa fa-angle-left" aria-hidden="true"></i>
                             </div>
                         </div>
-
-
                         <div class="second-arrow">
                             <div class="right-arrow">
                                 <i class="fa fa-angle-right" aria-hidden="true"></i>
                             </div>
                         </div>
-
                         <div class="circles">
                             <div class="circle"></div>
                             <div class="circle"></div>
                             <div class="circle"></div>
                             <div class="circle"></div>
                         </div>
-
                     </div>
-                    <h1>Revolution Slider Blog Post</h1>
-
+                    <span class="content-title slider"><a href="#">Revolution Slider Blog Post</a></span>
                     <div class="list">
                         <ul>
                             <li>By Tran Mau Tri Tam</li>
@@ -141,22 +129,19 @@
                             <li>Share This Post</li>
                         </ul>
                     </div>
-                    <p>In varius varius justo, eget ultrices mauris rhoncus non. Morbi tristique, mauris eu imperdiet
-                        bibendum, velit diam iaculis velit, in ornare massa enim at lorem. Etiam risus diam, porttitor
-                        vitae ultrices quis, dapibus id dolor. Morbi venenatis lacinia rhoncus. Pellentesque non
-                        bibendum tellus, vitae semper sem. Morbi nec porta sem, eget egestas leo. Donec imperdiet varius
-                        urna...
+                    <p class="post-desc slider">In varius varius justo, eget ultrices mauris rhoncus non. Morbi tristique, mauris eu imperdiet bibendum, velit diam iaculis velit, in ornare massa enim at lorem. Etiam risus diam, porttitor vitae ultrices quis, dapibus id dolor. Morbi venenatis lacinia rhoncus. Pellentesque non bibendum tellus, vitae semper sem. Morbi nec porta sem, eget egestas leo. Donec imperdiet varius urna...
                     </p>
-                    <a href="#">READ MORE</a>
+
+                    
+                    <a href="#" class="read-more">READ MORE</a>
                 </div>
-
-                <br><br><br>
-                <!-- REMOVE THIS -->
-                <br><br><br>
-
+<!-- VIMEO -->
                 <div class="post">
-                    <div class="video-img"></div>
-                    <h1>Amazing Standart Blog Post</h1>
+                    <div class="video-img">
+
+                        <iframe src="https://player.vimeo.com/video/210642716?color=ffffff&title=0&byline=0&portrait=0" width="850" height="200" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                    </div>
+                    <span class="content-title">Amazing Vimeo Video Blog Post</span>
                     <div class="list">
                         <ul>
                             <li>By Tran Mau Tri Tam</li>
@@ -167,24 +152,22 @@
                             <li>Share This Post</li>
                         </ul>
                     </div>
-                    <p>In varius varius justo, eget ultrices mauris rhoncus non. Morbi tristique, mauris eu imperdiet
-                        bibendum, velit diam iaculis velit, in ornare massa enim at lorem. Etiam risus diam, porttitor
-                        vitae
-                        ultrices quis, dapibus id dolor. Morbi venenatis lacinia rhoncus. Pellentesque non bibendum
-                        tellus,
-                        vitae semper sem. Morbi nec porta sem, eget egestas leo. Donec imperdiet varius urna...
+                    <p>
+                        In varius varius justo, eget ultrices mauris rhoncus non. Morbi tristique, mauris eu imperdiet bibendum, velit diam iaculis velit, in ornare massa enim at lorem. Etiam risus diam, porttitor vitae ultrices quis, dapibus id dolor. Morbi venenatis lacinia rhoncus. Pellentesque non bibendum tellus, vitae semper sem. Note: Vimeo Player - Full Group and Layers on Shortcode Page PSD
                     </p>
-                    <a href="#">READ MORE</a>
+
+                    <br><br>
+                    <!-- need to removev this -->
+                    <a href="#" class="read-more">READ MORE</a>
                 </div>
-
-
                 <br><br><br>
-                <!-- REMOVE THIS -->
-                <br><br><br>
-
                 <div class="post">
-                    <div class="video-img"></div>
-                    <h1>Amazing Standart Blog Post</h1>
+                    <div class="video-img">
+                            <iframe width="774" height="365" src="http://www.youtube.com/embed/VJpldXQXwKI">
+                            </iframe>
+                            
+                    </div>
+                    <span class="content-title">Amazing Youtube Video Blog Post</span>
                     <div class="list">
                         <ul>
                             <li>By Tran Mau Tri Tam</li>
@@ -195,30 +178,194 @@
                             <li>Share This Post</li>
                         </ul>
                     </div>
-                    <p>In varius varius justo, eget ultrices mauris rhoncus non. Morbi tristique, mauris eu imperdiet
-                        bibendum, velit diam iaculis velit, in ornare massa enim at lorem. Etiam risus diam, porttitor
-                        vitae
-                        ultrices quis, dapibus id dolor. Morbi venenatis lacinia rhoncus. Pellentesque non bibendum
-                        tellus,
-                        vitae semper sem. Morbi nec porta sem, eget egestas leo. Donec imperdiet varius urna...
+                    <p>In varius varius justo, eget ultrices mauris rhoncus non. Morbi tristique, mauris eu imperdiet bibendum, velit diam iaculis velit, in ornare massa enim at lorem. Etiam risus diam, porttitor vitae ultrices quis, dapibus id dolor. Morbi venenatis lacinia rhoncus. Pellentesque non bibendum tellus, vitae semper sem. Morbi nec porta sem, eget egestas leo. Donec imperdiet varius urna...
                     </p>
-                    <a href="#">READ MORE</a>
+
+                    <br><br>
+                    <!-- need to delete this     -->
+                    <a href="#"  class="read-more">READ MORE</a>
                 </div>
             </section>
-
+            
             <section class="sidebar top">
-                <h1>Twitter Widget</h1>
-                <div class="widget-post">
-                    <div class="widget-image"></div>
-                    <div class="description">
-                        <p>9GAG @9GAG 3m</p>
-                        <p>One of the craziest <br> food truck designs we've <br> ever seen! <br>
-                            http://on.be.net/1s5LE1y </p>
+                <section class="twitter">
+                    <span class="widget-title"><img src="image/title-icon.png" alt="icon">  Twitter Widget</span>
+                    <div class="widget-post">
+                        <div class="widget-image"></div>
+                        <div class="description">
+                            <p class="twitter-header"> <span class="black"><a href="#">9GAG</a></span> @9GAG 3m</p>
+                            <p class="twitter-data">One of the craziest food truck designs we've ever seen!
+                                <a href="http://on.be.net/1s5LE1y" class="green">http://on.be.net/1s5LE1y </a>
+                            </p>
+                        </div>
                     </div>
-                </div>
+
+                    <div class="widget-post second">
+                        <div class="widget-image second"></div>
+                        <div class="description second-header">
+                            <p class="second-header-user"><span class="black"><a href="#">Smashing Mag</a></span> @Smag 3m</p>
+                            <p class="second-header-post">So much new stuff to play with these days! If you’re interested in an in-house Front-End+RWD workshop, let me know! vitaly@smashingconf.com <a href="http://on.be.net/1s5LE1y" class="green">http://on.be.net/1s5LE1y</a> </p>
+                        </div>
+                    </div>
+
+                    <div class="widget-post third">
+                        <div class="widget-image third"></div>
+                        <div class="description third-header">
+                            <p class="third-header-user"><span class="black"><a href="#">John Doe</a></span> @John Doe 3m</p>
+                            <p class="third-header-post">One of the craziest food truck designs we've ever seen! <a href="http://on.be.net/1s5LE1y" class="green">http://on.be.net/1s5LE1y</a> </p>
+                        </div>
+                    </div>
+
+                    <div class="widget-post behance">
+                        <div class="widget-image behance"></div>
+                        <div class="description behance-header">
+                            <p class="behance-header-user"><span class="black"><a href="#">Behance</a></span> @Behance 3m</p>
+                            <p class="behance-header-post">One of the craziest food truck designs we've ever seen! <a href="http://tranmautritam.com" class="green">http://tranmautritam.com</a> </p>
+                        </div>
+                    </div>
+
+                    <div class="widget-post latest-widget">
+                        <div class="widget-image latest-widget"></div>
+                        <div class="description latest-widget">
+                            <p class="latest-widget-user"><span class="black"><a href="#">Jane Doe</a></span> @John Doe 3m</p>
+                            <p class="latest-widget-post">DirectWrite has been enabled by default in Canary on Windows. This fixes webfont rendering issues.
+                                <a href="http://tranmautritam.com" class="green">http://tranmautritam.com</a>
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+
+                <section class="flickr">
+                    <span class="flickr-title"><img src="image/title-icon.png" alt="icon"> Flickr Widget</span>
+                    <div class="parent-div first-parent">
+                        <a href="#" target="_blank">
+                            <div class="flickr-div"><span>+</span></div>
+                        </a>
+                        <a href="#" target="_blank">
+                            <div class="flickr-div"><span>+</span></div>
+                        </a>
+                        <a href="#" target="_blank">
+                            <div class="flickr-div"><span>+</span></div>
+                        </a>
+                    </div>
+
+
+                    <div class="parent-div second-parent" >
+                        <a href="#" target="_blank">
+                            <div class="flickr-div"><span>+</span></div>
+                        </a>
+                        <a href="#" target="_blank">
+                            <div class="flickr-div"><span>+</span></div>
+                        </a>
+                        <a href="#" target="_blank">
+                            <div class="flickr-div"><span>+</span></div>
+                        </a>
+                    </div>
+
+
+                    <div class="parent-div third-parent">
+                        <a href="">
+                            <div class="flickr-div"><span>+</span></div>
+                        </a>
+                        <a href="">
+                            <div class="flickr-div"><span>+</span></div>
+                        </a>
+                        <a href="">
+                            <div class="flickr-div"><span>+</span></div>
+                        </a>
+                    </div>
+                </section>
+      
+                <section class="tags">
+                    <span class="tags-title"><img src="image/title-icon.png" alt="icon"> Tags Widget</span>
+                    <div class="links">
+                        <a href="#">Awsome</a>
+                        <a href="#">Fonts</a>
+                        <a href="#">Web Design</a>
+                        <br> <br>
+                        <a href="#">Mobile</a>
+                        <a href="#">iOS</a>
+                        <a href="#">Flat</a>
+                        <a href="#">Photo Manip</a>
+                        <br> <br>
+                        <a href="#">Themforest</a>
+                        <a href="#">Facebook</a>
+                        <a href="#">Portfolio</a>
+                        <br> <br>
+                        <a href="#">Classic</a>
+                        <a href="#">Corporate</a>
+                        <a href="#">Stunning</a>
+                    </div>
+                </section>
+               
+
+                <section class="archives">
+                    <span class="archives-title"><img src="image/title-icon.png" alt="icon"> Archives</span>
+                    <div class="month">
+                        <ul>
+                            <li>
+                                <a href="#">
+                           March 2016
+                           <span class="day">9</span>
+                           </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                           February 2016
+                           <span>14</span>
+                           </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                           January 2016
+                           <span>15</span>
+                           </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                           December 2016
+                           <span>23</span>
+                           </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                           November 2016
+                           <span>34</span>
+                           </a>
+                            </li>
+                            <li>
+                                <a href="#"> 
+                            March 2015
+                           <span>9</span>
+                           </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                           February 2015
+                           <span>14</span>
+                           </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                           January 2015
+                           <span>15</span>
+                           </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                           December 2012
+                           <span>23</span>
+                           </a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="recent-comments">
+                    
+                </section>
             </section>
         </div>
-
     </main>
 </body>
 

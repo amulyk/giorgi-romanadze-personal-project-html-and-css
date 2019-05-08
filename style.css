@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -10,11 +11,16 @@
     margin-top:150px;
     font-family: 'Lato';
 }
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color:black;
+}
 
 .header{
     background-color:#1A1C27;
     color:white;
-    padding: 18px;
+    padding: 13.6px;
 }
 
 .default {
@@ -32,14 +38,16 @@
 }
 
 .post-img {
-    width:850px;
-    height:400px;
+    width: 774px;
+    height: 364px;
+    margin-bottom: 19px;
     background-color: #CCCCCC;
 }
 
 .video-img {
-    width:850px;
-    height:400px;
+    margin-top: 52px;
+    width: 774px;
+    height: 365px;
     background-color: #CCCCCC;
 }
 
@@ -56,6 +64,24 @@
     margin-right: 10px;
 }
 
+.my-icons:nth-of-type(1) {
+    font-size: 17px !important;
+    margin-top: 5px;
+    margin-left: -1px;
+}
+
+span.lang.span-row:nth-of-type(1) {
+    margin-left: 16.8px;
+}
+
+span.span-row:nth-of-type(2) {
+    margin-left: 27px;
+}
+span.span-row:nth-of-type(3) {
+    margin-left: 27px;
+}
+
+
 .span-row {
     font-size:17px;
     margin-left: 15px;
@@ -65,6 +91,7 @@
     display: inline-block;
 }
 .logo-image {
+    margin-left: 12px;
     float: left;
 }
 
@@ -93,6 +120,7 @@ img.menu-icon {
 .left-information >p {
     font-size:30px;
     float:left;
+    color: white;
 }
 
 .right-information ul li {
@@ -101,8 +129,8 @@ img.menu-icon {
 
 section.breadcrumbs {
     width: 100%;
-    background: red;
-    height:50px;
+    background: #222533;
+    height:110px;
 }
 
 
@@ -116,12 +144,16 @@ section.breadcrumbs {
 .left-information {
     float: left;
 }
-.right-information ul li a::after {
-    content: ">";
-    margin-left:10px;
+.right-information ul li:last-child:after {
+    content: "";
 }
+/* .right-information ul li::after {
+    content: ">";
+    margin-left:15px;
+} */
 .right-information ul li a {
-    margin-left: 28px;
+    margin-left: 23px;
+    color:white;
 }
 
 
@@ -138,11 +170,30 @@ img.hamburger-menu {
 }
 
 .list ul li {
-    display: inline;
-    color:red;
+    display: inline-block;
+    color:#A1B1BC;
+    font-size: 13px;
+    word-spacing: -2px;
+    letter-spacing: 0.4px;
 }
-section.content {
+
+.list ul li::after{
+    content: "|";
+    margin-left: 6px;
+}
+.list ul li:last-child:after {
+    content: "";
+}
+.list {
+    margin-top: 6.1px;
+}
+section.sidebar.top {
     position: absolute;
+}
+
+.content-title {
+    font-size: 28px;
+    letter-spacing: -0.04px;
 }
 /* end content */
 
@@ -163,26 +214,30 @@ section.content {
 }
 
 
+.widget-post {
+    border-bottom: 1px solid #DEE5E9;
+}
+
+
 
 /* THE SECOND CONTENT */
 
 .left-arrow {
     background-color: white;
-    width: 50px;
-    height:50px;
-    margin-top: 175px;
-
-    padding: 17px 18px;
+    width: 44px;
+    height: 46px;
+    margin-top: 158px;
+    padding: 13px 18px;
     position: absolute;
-    float:left;
+    float: left;
 }
 
 .second-arrow {
     background-color: white;
-    width: 50px;
-    margin-top: 175px;
-
-    padding: 17px 18px;
+    width: 44px;
+    margin-top: 158px;
+    height: 47px;
+    padding: 18px 3px;
 }
 
 .second-arrow {
@@ -197,18 +252,449 @@ section.sidebar.top >h1 {
     margin-bottom: 30px;
 }
 
+section.sidebar.top {
+    /* width:270px; */
+    width:259px;
+}
+
 .widget-image {
     background-color: #CCCCCC;
-    width:40px;
-    height:40px;
-    border-radius:5px;
-    float:left;
+    width: 37px;
+    height: 38px;
+    border-radius: 5px;
+    float: left;
     margin-right: 14px;
 }
 .description {
     margin-left: 53px;
+    margin-bottom:24px;
     /* position: absolute; */
+    
+}
+
+.green  {
+    color:#1ABC9C;
+}
+
+.widget-title {
+    font-size:18px;
+    /* font-weight:bold; */
+}
+
+/* end twitter widgets */
+
+
+/* FLICKR */
+
+.parent-div {
+    display:grid;
+    /* grid-template-areas: 
+    "flickr-div"; */
+    grid-template-columns: 1.2fr 1.2fr 1fr;
+}
+
+/* .flickr-div {
+    grid:flickr-div;
+} */
+.flickr-div {
+    background-color:#CCCCCC;
+    height:79px;
+    width:79px;
+    padding: 16px 28px;
+}
+
+.flickr-div span {
+    color: white;
+    font-size: 40px;
+    display:none;
+}
+/* .flickr-div:hover, .flickr-div span:hover {
+    color: white;
+    font-size: 40px;
+    display:block;
+} */
+
+/* end flickr */
+
+
+/* Tags */
+.tags a {
+    font-size: 12px;
+    font-weight: lighter;
+    background-color: #ECF0F1;
+    padding: 8.8px;
+    margin-left: 5px;
+    border-radius: 6px;
 }
 
 
-/* end twitter widgets */
+/* end tags */
+
+/* Archive */
+.archives .month ul li {
+    display: block;
+    border-bottom:1px #DEE5E9 solid;
+    padding:10px;
+}
+.archives .month ul li a, .top-nav .nav-row li a, 
+.span-row, .second-header-post, .twitter-data ,
+.third-header-post, .behance-header-post,
+.latest-widget-post,.twitter-header, .second-header-user, 
+.third-header-user, .latest-widget-user
+{
+    color:#A1B1BC;
+}
+.archives .month ul li span {
+    float: right;
+    margin-right: -15px;
+    margin-top: 2px;
+}
+
+.month ul li a:hover {
+    color: #1ABC9C;
+}
+/* end archive */
+
+/* 
+span.lang.span-row {
+    border-right: 1px solid #707070;
+    border-left: 1px solid #707070;
+    height: 5px;
+
+    
+} */
+
+
+/* PIXEL PERFECT */
+span.active.black {
+    margin-left: 4px;
+    /* margin-top: -11px; */
+}
+p.top span {
+    font-size: 12px;
+}
+
+span.call-us {
+    margin-left: -3px;
+    letter-spacing: 0.2px;
+    margin-top: 1px;
+}
+
+
+span.mail {
+    margin-left: 0px;
+    letter-spacing: 0.2px;
+}
+
+section.header .top{
+    margin-top: 2px;
+}
+
+section.navigation.top {
+    margin-top: 22px;
+    height:68px;
+}
+
+
+span.logo-title {
+    font-size: 32.7px;
+    margin-top: -44.7px;
+    position: absolute;
+    margin-left: 50.9px;
+}
+
+.menu {
+    font-size: 15px;
+    margin-left: -22.2px;
+    word-spacing: -5.8px;
+    margin-top: 0px;
+}
+
+
+
+
+.left-information p {
+    font-size: 27px;
+}
+.left-information {
+    float: left;
+    margin-top: 37px;
+    margin-left: 12.6px;
+}
+
+img.hamburger-menu {
+    margin-left: 19px;
+    height: 27px;
+    width: 27px;
+    margin-top: 5px;
+}
+
+.right-information {
+    margin-top: 47px;
+    margin-right: 96px;
+    font-size: 13px;
+}
+
+.right-information ul li a:last-child:after {
+    content: '';
+  }
+
+  .right-information {
+    margin-top: 47px;
+    margin-right: 143.8px;
+    font-size: 13px;
+    color: white;
+}
+
+.right-information ul li a:nth-of-type(1) {
+    margin-left: 30px;
+}
+
+i.fa.fa-angle-right {
+    position: absolute;
+    margin-left: 16.6px;
+    word-spacing: 8px;
+    font-size: 16.5px;
+    margin-top: -2px;
+}
+
+
+
+
+
+/* Widgets */
+
+section.twitter {
+    margin-top: 85px;
+    
+    margin-left: 13px;
+    /* margin-bottom: 10px; */
+}
+
+section.twitter .widget-title {
+    word-spacing: 2px;
+    letter-spacing: -0.4px;
+}
+
+section.twitter .widget-post{
+    margin-top: 23px;
+}
+
+section.twitter .description {
+    margin-left: 50px;
+    margin-bottom: 15px;
+    margin-top: -0.8px;
+    font-size: 13px;
+}
+
+
+p.twitter-data {
+    margin-top: 2.9px;
+    word-spacing: -0.9px;
+    line-height: 22.4px;
+}
+
+.widget-post.second {
+    margin-top: 18.4px !important;
+}
+
+
+p.second-header-user {
+    margin-top: -3px !important;
+    word-spacing: -1.4px;
+    letter-spacing: -0.3px;
+}
+
+p.second-header-post {
+    line-height: 22.8px;
+    margin-top: 1.6px;
+    word-spacing: 0.3px;
+}
+
+.widget-image.third {
+    margin-top: 5px;
+}
+p.third-header-user {
+    font-size: 14px;
+    margin-top: -11px;
+    word-spacing: -2px;
+}
+
+p.third-header-post {
+    margin-top: 1.8px;
+    line-height: 24px;
+    word-spacing: -1px;
+}
+
+
+.widget-post.third {
+    margin-top: 21.9px !important;
+}
+
+.widget-post.behance {
+    margin-top: 16px !important;
+}
+
+p.behance-header-user {
+    margin-top: 0;
+    /* margin-left: -24.9px !important; */
+    word-spacing: 1.2px;
+    letter-spacing: -0.1px;
+}
+
+.widget-image.behance {
+    margin-top: 7px;
+}
+
+p.behance-header-post {
+    line-height: 24px;
+    margin-top: 4px;
+    letter-spacing: -0.3px;
+}
+
+.widget-post.behance {
+    border-bottom: 1px solid #DEE5E9;
+    margin-top: 9px !important;
+}
+
+.widget-post.latest-widget {
+    margin-top: 17px !important;
+}
+
+p.latest-widget-user {
+    margin-top: -2px;
+    letter-spacing: -0.1px;
+}
+
+p.latest-widget-post {
+    line-height: 23.8px;
+    word-spacing: -1.7px;
+    margin-top: 2.3px;
+    letter-spacing: 0px;
+}
+/* end widgets */
+
+/* Flickr */
+section.flickr {
+    margin-top: 44px;
+    margin-left: 13px;
+}
+span.flickr-title {
+    word-spacing: 1.9px;
+    letter-spacing: 0.5px;
+}
+
+.parent-div.first-parent {
+    margin-top: 27px;
+    /* position: absolute; */
+}
+
+.parent-div.second-parent {
+    margin-top: 4px;
+    margin-left: -1px;
+    padding: 0px;
+}
+
+.parent-div.third-parent {
+    margin-top: 7px;
+}
+
+.parent-div.third-parent .flickr-div {
+    height: 74px;
+}
+/* end flickr */
+
+/* Tags */
+section.tags {
+    margin-top: 44.7px;
+    margin-left: 13px;
+}
+
+span.tags-title {
+    word-spacing: 3.5px;
+    letter-spacing: -0.1px;
+    margin-top: -16px !important;
+}
+
+.links {
+    margin-top: 34px;
+}
+/* end tags */
+
+/* archives */
+section.archives {
+    margin-top: 24.2px;
+    margin-left: 14px;
+}
+
+span.archives-title {
+    margin-left: 0px;
+    word-spacing: 4px;
+    letter-spacing: 0.3px;
+}
+
+.month {
+    margin-top: 9.4px;
+    margin-left: -15.6px;
+    font-size: 13px;
+    padding: 0px;
+}
+
+.archives .month ul li {
+    display: block;
+    border-bottom: 1px #DEE5E9 solid;
+    padding: 14.2px;
+}
+/* end archives */
+
+
+/* content */
+section.content {
+    margin-top: 90px;
+    margin-left: -13px;
+}
+
+
+p.post-desc {
+    margin-top: 33px;
+    line-height: 21.9px;
+    letter-spacing: -0.001px;
+    word-spacing: 1.8px;
+    font-size: 12px;
+    width: 777px;
+    margin-bottom: 40px;
+}
+
+
+a.read-more {
+    width: 135px !important;
+    height: 45px;
+    padding: 12px 19px;
+    margin-top: -17px;
+    position: absolute;
+    font-weight: 700;
+    border: 1px solid #2C3E50;
+}
+
+a.read-more:hover {
+    background-color: #2C3E50;
+    color: white;
+}
+
+.post.first {
+    margin-bottom: 132px;
+}
+
+span.content-title a:hover {
+    color: #1ABC9C;
+}
+
+.video-img.second-tag {
+    margin-bottom: 19px;
+}
+
+.post.content-second-post {
+    margin-bottom: 131px !important;
+}
+/* end content */
+/* END PIXEL PERFECT */
